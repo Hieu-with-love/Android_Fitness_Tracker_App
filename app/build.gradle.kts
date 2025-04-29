@@ -33,10 +33,21 @@ android {
 
 dependencies {
 
+    // CameraX core & lifecycle
+    implementation (libs.androidx.camera.core)
+    implementation (libs.androidx.camera.camera2)
+    implementation (libs.androidx.camera.lifecycle)
+    implementation (libs.camera.view)
+
+    // ML Kit Pose Detection
+    implementation (libs.pose.detection.v1800beta5)
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.androidx.ui.graphics.android)
+    implementation(libs.pose.detection.accurate)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

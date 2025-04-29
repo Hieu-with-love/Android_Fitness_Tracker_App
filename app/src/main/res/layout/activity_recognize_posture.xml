@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RecognizePostureActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <hcmute.edu.vn.fitnesstrackerapp.view.OverlayView
+        android:id="@+id/overlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tvPoseResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đang phân tích tư thế..."
+        android:background="#AA000000"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:textAlignment="center"/>
+
+</FrameLayout>
