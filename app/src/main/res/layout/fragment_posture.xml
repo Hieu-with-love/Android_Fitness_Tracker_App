@@ -32,7 +32,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Đặt thiết bị ở một vị trí ổn định, sau đó nhấn nút bắt đầu đ thực hiện tập luyện"
+            android:text="Đặt thiết bị ở một vị trí ổn định, sau đó nhấn nút bắt đầu để thực hiện tập luyện"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sau 20 giây, thiết bị sẽ tự động chụp ảnh và nhận dạng tư thế"
             android:layout_marginBottom="20dp"
             android:textAlignment="center"/>
 
