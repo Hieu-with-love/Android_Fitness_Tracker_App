@@ -1,9 +1,12 @@
 package hcmute.edu.vn.fitnesstrackerapp;
 
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -18,11 +21,15 @@ public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
     private Fragment currentFragment;
 
+    private static final int REQUEST_CAMERA = 1001;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
+        acquirePermission();
 
         bottomNavigationView = findViewById(R.id.bottom_nav_view);
 
@@ -40,6 +47,15 @@ public class MainActivity extends AppCompatActivity {
             }
             return true;
         });
+
+    }
+
+    private void acquirePermission() {
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{android.Manifest.permission.CAMERA}, REQUEST_CAMERA);
+        }
 
     }
 

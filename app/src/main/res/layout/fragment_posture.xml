@@ -5,10 +5,54 @@
     android:layout_height="match_parent"
     tools:context=".fragment.PostureFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tư thế tập luyện"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhận diện tư thế tập luyện và đánh giá tư thế của bạn"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đặt thiết bị ở một vị trí ổn định, sau đó nhấn nút bắt đầu để thực hiện tập luyện"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sau 20 giây, thiết bị sẽ tự động chụp ảnh và nhận dạng tư thế"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/startRecognize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="Bắt đầu tập luyện" />
+
+
+    </LinearLayout>
+
 
 </FrameLayout>

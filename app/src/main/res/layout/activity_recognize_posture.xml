@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <hcmute.edu.vn.fitnesstrackerapp.view.OverlayView
+        android:id="@+id/overlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:layout_gravity="top|right"
+        android:layout_margin="12dp"
+        android:id="@+id/btnFlipCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flip Camera"
+        android:src="@drawable/ic_flip_camera"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/tvPoseResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pose: "
+        android:textColor="#FFFFFF"
+        android:background="#88000000"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="30dp" />
+</FrameLayout>
