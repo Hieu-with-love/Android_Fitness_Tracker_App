@@ -53,10 +53,9 @@ public class HomeFragment extends Fragment {
         teamMembers = new ArrayList<>();
         
         // Add team members (replace with actual team members)
-        teamMembers.add(new TeamMember("Student Name 1", "MSSV: 20110123", "Team Leader"));
-        teamMembers.add(new TeamMember("Student Name 2", "MSSV: 20110124", "UI/UX Designer"));
-        teamMembers.add(new TeamMember("Student Name 3", "MSSV: 20110125", "Backend Developer"));
-        teamMembers.add(new TeamMember("Student Name 4", "MSSV: 20110126", "Database Administrator"));
-        teamMembers.add(new TeamMember("Student Name 5", "MSSV: 20110127", "QA Tester"));
+        teamMembers.add(new TeamMember("Trần Trung Hiếu", "MSSV: 22110139", "Team Leader"));
+        teamMembers.add(new TeamMember("Trần Xuân Bảo", "MSSV: 22110113", "UI/UX Designer"));
+        teamMembers.add(new TeamMember("Phạm Công Chiến", "MSSV: 22110116", "Backend Developer"));
+        teamMembers.add(new TeamMember("Nguyễn Hữu Đức Thọ", "MSSV: 22110237", "Database Administrator"));
     }
 }
